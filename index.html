@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iphone Shop</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <nav class="my-navbar">
+      <div class="right-navbar">
+        <i class="bi-apple"></i>
+        <span onclick="return window.location.reload()"> نمایندگی آیفون </span>
+      </div>
+    </nav>
+
+    <div class="container mt-3 mb-3">
+      <div class="row" id="product-list">
+        <!-- products -->
+        <!-- <div class="product-card col-lg-3 col-md-4 col-sm-6 border p-2">
+          <div class="right-card-prod">
+            <img src="./assets/images/img-iphone-11.jpg" alt="iphone-11" />
+            <h4>iphone 11</h4>
+          </div>
+          <h6>32000000 تومان</h6>
+          <button class="mb-2">افزودن به سبد خرید</button>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="container mb-4">
+      <h3>سبد خرید</h3>
+      <hr />
+
+      <div class="cart-empty show">
+        <img src="./assets/images/empty.png" alt="" />
+        <p>سبد خرید خالی است</p>
+      </div>
+
+      <div id="cart-container">
+        <!-- cart-items -->
+      </div>
+      <hr />
+      <span id="sum-price"></span>
+      <div>
+        <button class="btn w-100 btn-primary mt-4">ادامه فرایند خرید</button>
+      </div>
+    </div>
+
+    <div class="my-toast hidden-toast">
+      <div class="close-btn-toast">
+        <i id="toast-close" class="fa fa-close"></i>
+      </div>
+      <span id="toast-message"></span>
+    </div>
+    <footer>
+      <div class="footer"><span>ساخته شده توسط سجاد مهری ©</span></div>
+    </footer>
+  </body>
+</html>
